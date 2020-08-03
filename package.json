@@ -1,0 +1,30 @@
+{
+  "name": "ledger-app-isolation-bypass-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build index.html --public-url ./ -d dist",
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monokh/ledger-app-isolation-bypass-poc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/monokh/ledger-app-isolation-bypass-poc/issues"
+  },
+  "homepage": "https://github.com/monokh/ledger-app-isolation-bypass-poc#readme",
+  "dependencies": {
+    "@ledgerhq/hw-app-btc": "^5.13.1",
+    "@ledgerhq/hw-transport-webusb": "^5.13.1",
+    "axios": "^0.19.2",
+    "babel-polyfill": "^6.26.0",
+    "bip32": "^2.0.5",
+    "bitcoinjs-lib": "^5.1.7",
+    "lodash": "^4.17.15",
+    "parcel": "^1.12.4"
+  }
+}

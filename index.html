@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ledger App Isolation Bypass PoC</title>
+    <style>
+      body {
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+      button {
+        padding: 20px 40px;
+        background: #000000;
+        color: white;
+        border: 0
+      }
+
+      sup {
+        font-size: 14px;
+      }
+
+      #txinfo {
+        padding: 20px;
+        border: 1px solid #000000;
+        display: inline-block;
+        margin-top: 20px;
+      }
+
+      #send {
+        margin-top: 20px;
+      }
+
+      #amount, #address {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <h1>Mind dropping me a <em>tiny</em> litecoin <sup>*wink wink*</sup> tip?</h1>
+      <div><button id="connect">Connect Ledger</button></div>
+      <div id="txinfo" style="display:none;">
+        <div>Amount: <span id="amount"></span></div>
+        <div>Address: <span id="address"></span></div>
+        <button id="send">Confirm on Ledger</button>
+        <div id="rawtx"></div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
